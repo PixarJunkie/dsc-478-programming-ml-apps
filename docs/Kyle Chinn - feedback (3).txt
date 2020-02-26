@@ -1,0 +1,26 @@
+results_Q1: -12.0
+Q1
+a) good
+b) good
+c) you did not show the list of most informative variables and their weights -2
+c) you did not plot the model's mean absolute error values on cross-validation relative to the percentage of selected features -2
+c) you need to aim to get the lowest mae, not max -2
+d) you need to aim to get the lowest cv mae score -2
+d) you did not plot the error values on the training and cross-validation splits across the specified values of the alpha parameter -2
+e) you are not supposed to use gridsearch for the l1-ratio, use your method in d) -2
+
+results_Q2: -13.0
+Q2
+a) you forgot to compute the distance -1
+try:
+def cos_sim(x, D):
+    x_norm = np.linalg.norm(x)
+    D_norm = np.linalg.norm(D)
+    similarity = np.dot(x, D) / (x_norm * D_norm)
+    dists = 1 - similarity
+    return dists
+b) good
+c) your distance function might be causing the long processing time. also revisit your kmeans, refer to the in-class examples -2
+d) good
+e) none submitted -10
+
